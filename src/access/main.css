@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&family=Roboto:wght@500&display=swap');
+ .App{
+  margin: 1rem;
+ }
+  *{
+    box-sizing : border-box;
+    margin : 0;
+    padding : 0;
+  }
+  .Navbar {
+    border : 1px solid black;
+    display : flex;
+    flex-direction : column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color : black;
+    padding : 2rem;
+    margin-top : 1rem;
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 500px;
+  }
+  .Navbar h2 {
+    border-right : 1px solid #fff;
+    padding-right: 1rem;
+    font-family: 'Roboto';
+    color : white;
+  }
+  .Navbar h2:hover {
+    cursor : pointer;
+  }
+  .navlinks {
+    display :flex;
+    width : 70%;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+  }
+  .navlinks a {
+    text-decoration: none;
+    color : #fff;
+ 
+  }
+  
+  .navlinks a:hover {
+    cursor : pointer;
+    color :coral
+  }
+
+  @media only screen and (max-width: 740px) {
+    .Navbar {
+        display : flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height : auto;
+        border : none;
+        background-color: black;
+        margin : 0;
+    }
+    .Navbar h2{
+       border-right : none;
+       font-size : 30px;
+       color : #fff;
+    }
+    .navlinks a{
+        margin : 1rem;
+        font-size : 15px;
+        width : 25%;
+        padding : 0;
+    }
+    .logo-img{
+        width : 150px;
+        height : 150px;
+        display : flex;  
+        margin : 1rem;
+        border-radius : 50%;
+    }
+  }
+.logo-img {
+    width : 150px;
+    height : 150px;
+    margin : 1rem;
+}
+
+/* hero section style */
+
+ .hero-container {
+   display: block;
+   margin-top : 1rem ;
+   height: 80vh;
+   font-family: 'Poppins', 'sans-serif';
+ }
+  .hero-box:first-of-type  {
+    background-image: url("./images/istockphoto-1350019861-612x612.jpeg");
+    width : auto;
+    height : 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    display : flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index : -1;
+  }  
+  .content-box {
+    margin : 1rem;
+    padding : 1rem;
+    z-index : 2;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+  }
+
+  .content-box:hover{
+    cursor: pointer;
+  }
+  .content-box a{
+    text-decoration: none;
+    color : black;
+    opacity: 100%;
+  }
+  .content-box a:hover{
+    cursor : pointer;
+    color : pink;
+  }
+  .hero-box:nth-of-type(2) {
+    background-image: url("./images/skincare-s.webp");
+    width : auto;
+    height : 50%;
+    background-size: cover;
+    background-repeat: none;
+    object-fit: cover;
+    display : flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding : 1rem;
+    margin-top : 0.5rem;
+  }  
+
+  @media only screen and (min-width: 740px){
+    .App{
+      margin: 13rem;
+      margin-top : 1rem;
+    }
+    .hero-container{
+      display : flex;
+      align-items: center;
+      height: 30rem;
+      padding-top:0;
+      justify-content: space-between;
+    }
+    #box-1 {
+      height: 100%;
+      width : 50%;
+      margin: 1rem;
+    }
+    #box-2 {
+      height: 100%;
+      width : 50%;
+      margin: 1rem;
+    }
+  }
+/* end of hero section style */
+/*  Daily blogs */
+ .blogs-container {
+  display : block;
+   margin-top : 2rem;
+   height : auto;
+   font-family: 'Roboto';
+ }
+ .blogs-container .title{
+ text-align: center;
+ }
+.blogs-hero-section {
+  display : flex;
+  width : 100%;
+  margin-top :1rem;
+  height: 10rem;
+  justify-content: space-between;
+}
+.blogs-hero-section a{
+  text-decoration: none;
+  color : black;
+}
+.blogs-hero-section a:hover{
+  cursor : pointer;
+
+}
+.blog-content {
+  width : 50%;
+}
+.images-1{
+  width : 40%;
+  background-image: url(./images/breast-caner.webp);
+  object-fit: cover;
+  background-size: cover;
+}
+.images-2{
+  width : 40%;
+  background-image: url(./images/blogs-img-3.jpeg);
+  object-fit: cover;
+  background-size: cover;
+}
+.images-3{
+  width : 40%;
+  background-image: url(./images/blogs-post.jpeg);
+  object-fit: cover;
+  background-size: cover;
+}
+.images-4{
+  width : 40%;
+  background-image: url(./images/blogs-img.webp);
+  object-fit: cover;
+  background-size: cover;
+}
+@media only screen and (min-width: 600px){
+  .blogs-hero-section {
+    height : 15rem;
+  }
+}
+/* End of  Daily blogs */
+/* Email collection section */
+.input-container{
+  font-family: 'Roboto';
+  margin-top : 2rem;
+  display: flex;
+  height: 20rem;
+}
+.images-email{
+  background-image: url(./images/skincare-3.jpeg);
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  background-size: cover;
+}
+.email-content{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.email-content p{
+  font-family: sans-serif;
+}
+.email-content input{
+  height: 20%;
+  border-radius : 5px;
+  border: 0.5px solid black;
+  text-align:center;
+  font-size : 15px;
+}
+.email-content input::placeholder{
+  text-align: center;
+  font-size: 15px;
+}
+.email-content .submit{
+  background-color:darkcyan;
+  color: white;
+}
+/* end of Email collection section */
+
+.more-blogs-container{
+  margin-top : 2rem;
+  height: 20rem;
+}
+.style-box{
+  display: flex;
+  height: 100%;
+}
+.blogs-cont{
+  display : flex;
+  border: 1px solid black;
+  flex-direction: column;
+}
+.blogs-cont a{
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+.blog-images-1{
+  background-image: url(./images/breast.jpeg);
+  height: 50%;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+.blog-images-2{
+  background-image: url(./images/vacine-sideeffect.webp);
+  height: 50%;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+.blog-images-3{
+  background-image: url(./images/stress-blogs.jpeg);
+  height: 50%;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+.blog-images-4{
+  background-image: url(./images/stillbirt.jpeg);
+  height: 50%;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
