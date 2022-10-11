@@ -46,36 +46,7 @@
     color :coral
   }
 
-  @media only screen and (max-width: 740px) {
-    .Navbar {
-        display : flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        height : auto;
-        border : none;
-        background-color: black;
-        margin : 0;
-    }
-    .Navbar h2{
-       border-right : none;
-       font-size : 30px;
-       color : #fff;
-    }
-    .navlinks a{
-        margin : 1rem;
-        font-size : 15px;
-        width : 25%;
-        padding : 0;
-    }
-    .logo-img{
-        width : 150px;
-        height : 150px;
-        display : flex;  
-        margin : 1rem;
-        border-radius : 50%;
-    }
-  }
+  
 .logo-img {
     width : 150px;
     height : 150px;
@@ -95,6 +66,7 @@
     width : auto;
     height : 50%;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     object-fit: cover;
     display : flex;
@@ -131,6 +103,7 @@
     width : auto;
     height : 50%;
     background-size: cover;
+    background-position: center;
     background-repeat: none;
     object-fit: cover;
     display : flex;
@@ -140,29 +113,7 @@
     margin-top : 0.5rem;
   }  
 
-  @media only screen and (min-width: 740px){
-    .App{
-      margin: 13rem;
-      margin-top : 1rem;
-    }
-    .hero-container{
-      display : flex;
-      align-items: center;
-      height: 30rem;
-      padding-top:0;
-      justify-content: space-between;
-    }
-    #box-1 {
-      height: 100%;
-      width : 50%;
-      margin: 1rem;
-    }
-    #box-2 {
-      height: 100%;
-      width : 50%;
-      margin: 1rem;
-    }
-  }
+ 
 /* end of hero section style */
 /*  Daily blogs */
  .blogs-container {
@@ -196,18 +147,21 @@
   width : 40%;
   background-image: url(./images/breast-caner.webp);
   object-fit: cover;
+  background-position: center;
   background-size: cover;
 }
 .images-2{
   width : 40%;
   background-image: url(./images/blogs-img-3.jpeg);
   object-fit: cover;
+  background-position: center;
   background-size: cover;
 }
 .images-3{
   width : 40%;
   background-image: url(./images/blogs-post.jpeg);
   object-fit: cover;
+  background-position: center;
   background-size: cover;
 }
 .images-4{
@@ -215,11 +169,7 @@
   background-image: url(./images/blogs-img.webp);
   object-fit: cover;
   background-size: cover;
-}
-@media only screen and (min-width: 600px){
-  .blogs-hero-section {
-    height : 15rem;
-  }
+  background-position: center;
 }
 /* End of  Daily blogs */
 /* Email collection section */
@@ -233,6 +183,7 @@
   background-image: url(./images/skincare-3.jpeg);
   width: 50%;
   height: auto;
+  background-position: center;
   object-fit: cover;
   background-size: cover;
 }
@@ -268,12 +219,14 @@
 }
 .style-box{
   display: flex;
-  height: 100%;
+  height:80%;
+  justify-content: space-between;
 }
 .blogs-cont{
   display : flex;
-  border: 1px solid black;
   flex-direction: column;
+  width: 24%;
+  justify-content: space-between;
 }
 .blogs-cont a{
   text-decoration: none;
@@ -282,29 +235,186 @@
 }
 .blog-images-1{
   background-image: url(./images/breast.jpeg);
-  height: 50%;
+  height: 68%;
   background-position: center;
   background-size: cover;
   object-fit: cover;
 }
 .blog-images-2{
   background-image: url(./images/vacine-sideeffect.webp);
-  height: 50%;
+  height: 68%;
   background-position: center;
   background-size: cover;
   object-fit: cover;
 }
 .blog-images-3{
   background-image: url(./images/stress-blogs.jpeg);
-  height: 50%;
+  height: 68%;
   background-position: center;
   background-size: cover;
   object-fit: cover;
 }
 .blog-images-4{
   background-image: url(./images/stillbirt.jpeg);
-  height: 50%;
+  height: 68%;
   background-position: center;
   background-size: cover;
   object-fit: cover;
 }
+                /*Footer   */
+.footer{
+  font-family: 'Poppins';
+  background-color: antiquewhite;
+  padding-top : 1rem;
+}
+.header{
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.social-icons {
+  /* border: 1px solid black; */
+  width: 100%;
+  text-align: center;
+}
+.social-icons i{
+  margin : 1rem;
+  font-size: 25px;
+  color : black;
+}
+.footer-body{
+  width: 100%;
+}
+.email-input {
+  /* border : 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 15rem;
+}
+.email-input input {
+  width : 10rem;
+  height : 2rem;
+  border-radius : 5px;
+  border : 0.5px solid black;
+  margin-bottom: 1rem;
+}
+.email-input input::placeholder {
+  padding-left : 1rem;
+}
+.email-input input:last-of-type{
+  background-color :darkcyan;
+  color : white;
+}
+.privacy-links {
+width: 100%;
+text-align: center;
+}
+.privacy-links p {
+  margin : 1rem;
+}
+.privacy-links a {
+  text-decoration: none;
+  color : black;
+}
+.privacy-links a:hover {
+  color : pink;
+}
+                   /* media query responsive style */
+ @media only screen and (min-width: 670px){
+   .App {
+    padding:1rem 3rem 1rem 3rem;
+   }
+ }
+ @media only screen and (min-width: 740px){
+    .App{
+      
+    }
+     .hero-container{
+      display : flex;
+      align-items: center;
+      height: 30rem;
+      padding-top:0;
+      justify-content: space-between;
+    }
+    #box-1 {
+      height: 100%;
+      width : 50%;
+      margin: 1rem;
+    }
+    #box-2 {
+      height: 100%;
+      width : 50%;
+      margin: 1rem;
+    }
+  }
+    @media only screen and (min-width: 600px){
+    .blogs-hero-section {
+      height : 15rem;
+    }
+      }
+    @media only screen and (max-width: 740px) {
+      
+    .Navbar {
+      display : flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      height : auto;
+      border : none;
+      background-color: black;
+      margin : 0;
+      }
+    .Navbar h2{
+      border-right : none;
+      font-size : 30px;
+      color : #fff;
+      }
+    .navlinks a{
+      margin : 1rem;
+      font-size : 15px;
+      width : 25%;
+      padding : 0;
+      }
+    .logo-img{
+      width : 150px;
+      height : 150px;
+      display : flex;  
+      margin : 1rem;
+      border-radius : 50%;
+      }
+
+        }   
+        @media only screen and (max-width: 530px)  {
+          .App{
+            font-size :12px
+          }
+        } 
+        @media only screen and (max-width: 390px){
+          .more-blogs-container{
+            display: none;
+          }
+          .privacy-links{
+            display: none;
+          }
+          .footer-body{
+            display : none;
+          }
+        }  
+        @media    only screen and (max-width: 210px)  {
+          .App{
+            font-size : 8px;
+          }
+          .footer{
+            background-color: #fff;
+          }
+        }
+   @media    only screen and (min-width: 1300px) {
+    .App {
+      margin : 0 15rem 0 15rem;
+    }
+   }
+                   /* end of media query */
