@@ -1,21 +1,24 @@
 import React, { Component } from 'react';
 import logo from "../images/logo.png"
+import { Link } from 'react-router-dom';
 
-
-  export default class navs extends Component {
-  render() {
+  function Navs() {
+  
+    
     return (
       <div className='Navbar'>
          <h2>Healthy Lifestyle</h2>
          <img src={logo} className="logo-img" alt='Brand logo'></img>
          <ul className='navlinks'>
-         <a href="#" target="#blank"><li>Home</li></a>
-         <a href="#" target="#blank"><li>About us</li></a>
-         <a href="#" target="#blank"><li>Nutrition</li></a>
-         <a href="#" target="#blank"><li>Blogs post</li></a>
-         <a href="#" target="#blank"><li>Comment</li></a>
+         <Link to = "/home" className='links'> Home </Link>
+         <Link to = "/about" className='links'> About us </Link>
+         <Link to = "/nutrition" className='links'> Nutrition </Link>
+         <Link to = "/blogs" className='links'> Blogs Post </Link>
+         <Link to = "/comment" className='links'> Comment </Link>
          </ul>
       </div>
-    )
-  }
+  )
+
 }
+
+export default  Navs;

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&family=Roboto:wght@500&display=swap');
- .App{
+ .home,.nutrition,.comment,.blogs,.about {
   margin: 1rem;
+  width : 100vw;
  }
   *{
     box-sizing : border-box;
@@ -25,8 +26,13 @@
     font-family: 'Roboto';
     color : white;
   }
-  .Navbar h2:hover {
+  .Navbar .links:hover {
     cursor : pointer;
+    color : black;
+    border : 1px solid pink;
+    border-radius : 5px;
+    padding: 0.5rem;
+    background-color: #fff;
   }
   .navlinks {
     display :flex;
@@ -35,13 +41,13 @@
     align-items: center;
     list-style-type: none;
   }
-  .navlinks a {
+  .navlinks .links {
     text-decoration: none;
     color : #fff;
  
   }
   
-  .navlinks a:hover {
+  .navlinks Link:hover {
     cursor : pointer;
     color :coral
   }
@@ -266,6 +272,7 @@
   font-family: 'Poppins';
   background-color: antiquewhite;
   padding-top : 1rem;
+  padding-bottom : 1rem;
 }
 .header{
   /* border: 1px solid black; */
@@ -303,7 +310,10 @@
   margin-bottom: 1rem;
 }
 .email-input input::placeholder {
-  padding-left : 1rem;
+  
+}
+.email-input input{
+  padding-left: 1rem;
 }
 .email-input input:last-of-type{
   background-color :darkcyan;
@@ -325,14 +335,12 @@ text-align: center;
 }
                    /* media query responsive style */
  @media only screen and (min-width: 670px){
-   .App {
+  .home,.nutrition,.comment,.blogs,.about {
     padding:1rem 3rem 1rem 3rem;
    }
  }
  @media only screen and (min-width: 740px){
-    .App{
-      
-    }
+    
      .hero-container{
       display : flex;
       align-items: center;
@@ -389,7 +397,7 @@ text-align: center;
 
         }   
         @media only screen and (max-width: 530px)  {
-          .App{
+          .home,.nutrition,.comment,.blogs,.about{
             font-size :12px
           }
         } 
@@ -405,7 +413,7 @@ text-align: center;
           }
         }  
         @media    only screen and (max-width: 210px)  {
-          .App{
+          .home,.nutrition,.comment,.blogs,.about{
             font-size : 8px;
           }
           .footer{
@@ -413,7 +421,7 @@ text-align: center;
           }
         }
    @media    only screen and (min-width: 1300px) {
-    .App {
+    .home,.nutrition,.comment,.blogs,.about {
       margin : 0 15rem 0 15rem;
     }
    }

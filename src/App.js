@@ -7,17 +7,21 @@
  import EmailCollection from './access/component/EmailCollection';
  import DailyBlogs from './access/component/DailyBlogs';
  import MoreBlogsSection from './access/component/MoreBlogsSection';
+ import ReactDOM from 'react-dom/client';
+ import { 
+  BrowserRouter as Router, Route, Routes , useNavigate , Link , Outlet
+ } from "react-router-dom";
+  
+ 
+
 
 function App() {
   return (
     <div className="App">
-      <Navs />
-      <HeroSection />
-      <DailyBlogs />
-      <EmailCollection />
-      <MoreBlogsSection />
-      <Footer />
+      <Outlet />
     </div>
+
+    
   );
 }
 

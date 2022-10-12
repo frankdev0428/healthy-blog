@@ -1,0 +1,18 @@
+<Router>
+    <div className="App">
+    <Navs />
+      <HeroSection />
+      <DailyBlogs />
+      <EmailCollection />
+      <MoreBlogsSection />
+    </div>
+     <Routes>
+      <Route path="/" element={<Home />}></Route>
+      <Route path="/about" element={<About />}></Route>
+      <Route path="/nutrition" element={<Nutrition />}></Route>
+      <Route path="blogs" element={<Blogs />}></Route>
+      <Route path="/comment" element={<Comment />}></Route>
+      <Route path="*" element={<ErrorPage />}></Route>
+     </Routes>
+     <Footer />
+    </Router>
