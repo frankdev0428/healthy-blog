@@ -29,10 +29,8 @@
   .Navbar .links:hover {
     cursor : pointer;
     color : black;
-    border : 1px solid pink;
-    border-radius : 5px;
-    padding: 0.5rem;
     background-color: #fff;
+    border-radius: 5px;
   }
   .navlinks {
     display :flex;
@@ -100,7 +98,7 @@
     color : black;
     opacity: 100%;
   }
-  .content-box a:hover{
+  .content-box  h2:hover{
     cursor : pointer;
     color : pink;
   }
@@ -359,6 +357,43 @@ text-align: center;
       margin: 1rem;
     }
   }
+                      /* Daily blogs  */
+  .blog02-content-container {
+    /* border : 1px solid black; */
+    width: 100%;
+    height: auto;
+    display : flex;
+    flex-direction: column;
+    
+  }
+  #blogs-02-images {
+   width : 100%;
+   padding : 5rem;
+  }
+  #hero-images01{
+    background-image: url(../access/images/blog-img-01.jpeg);
+  }
+  #hero-images02{
+    background-image: url(../access/images/images-blog-2.jpeg);
+  }
+  #hero-images03{
+    background-image: url(../access/images/blog-image-03.jpeg);
+  }
+  #hero-images04{
+    background-image: url(../access/images/blog-images-04.png);
+  }
+
+
+
+
+
+
+
+
+
+
+
+                   /*End of  Daily blogs  */
     @media only screen and (min-width: 600px){
     .blogs-hero-section {
       height : 15rem;

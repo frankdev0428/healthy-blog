@@ -8,8 +8,7 @@ import Blogs from './pages/Blogs';
 import Nutrition from './pages/Nutrition';
 import Comment from './pages/Comment';
 import Home from './pages/Home';
-
-
+import HeroBlog02 from './pages/landingpages/Hero-blogs/HeroBlog02';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -22,7 +21,7 @@ const router = createBrowserRouter([
   element: <App /> ,
   children : [
     {
-      path : "/home",
+      path : "/",
       element : <Home />
     },
     {
@@ -40,6 +39,10 @@ const router = createBrowserRouter([
     {
       path: "/nutrition",
       element: <Nutrition />
+    },
+    {
+      path: "/your-skin-is-super-hero",
+      element: <HeroBlog02 />
     },
   ]
 },
