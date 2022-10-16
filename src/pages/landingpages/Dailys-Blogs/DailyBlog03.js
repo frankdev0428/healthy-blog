@@ -6,4 +6,4 @@ function DailyBlog03() {
   )
 }
 
-export default DailyBlog03
+export default DailyBlog03;

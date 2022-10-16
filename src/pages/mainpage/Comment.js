@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Navs from '../access/component/Navs';
-import Footer from '../access/component/Footer';
-import '../access/main.css';
+import Navs from '../../access/component/Navs';
+import Footer from '../../access/component/Footer';
+import '../../access/main.css';
 
 export default class Comment extends Component {
   render() {

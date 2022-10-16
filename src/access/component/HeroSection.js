@@ -6,7 +6,7 @@ export default class HeroSection extends Component {
       <div className='hero-container'>
        <div className='hero-box' id="box-1">
         <div className='content-box'>
-        <Link to = "/your-skin-is-super-hero"><h2 >How to Skip Beauty Buzzwords, Plus 12 Ingredients Derms Love</h2></Link>
+        <Link to = "/how-to-skip-beauty"><h2 >How to Skip Beauty Buzzwords, Plus 12 Ingredients Derms Love</h2></Link>
          <p>Derms share their favorite ingredients and the ones you can skip</p>
         </div>
        </div>

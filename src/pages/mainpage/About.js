@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import Navs from '../access/component/Navs';
-import '../access/main.css';
-import '../pages-style/about.css'
-import Footer from '../access/component/Footer'
+import Navs from '../../access/component/Navs';
+import '../../access/main.css';
+import '../../pages-style/about.css'
+import Footer from '../../access/component/Footer'
 export default class About extends Component {
   render() {
     return (

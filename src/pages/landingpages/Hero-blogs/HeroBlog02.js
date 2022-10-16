@@ -188,39 +188,42 @@ function HeroBlog02() {
       <img src= {authorImages}/>
       <p>Beth Ann Mayer is a New York-based freelance writer and content strategist who specializes in health and parenting writing. Her work has been published in Parents, Shape, and Inside Lacrosse. She is a co-founder of digital content agency Lemonseed Creative and is a graduate of Syracuse University. You can connect with her on LinkedIn.</p>
     </div>
-   <hr/>
    <div className='rec-blogs'>
    <div className='blogs-container'>
         <h2 className='title'>DAILY BLOGS</h2>
         <hr/>
         <div className="blogs-hero-section">
          <span className='images-1' id='hero-images01'></span>
-         <div className="blog-content">
+         <div className="blog-content heroblog02">
           <a href="#" target="#blank"><h2>The Ultimate Skin Care Routine for Dry Skin
 </h2></a>
           <p>Dry, flaky skin will be a thing of the past with these expert tips. Plus, we review 20 of the best products for dry skin.</p>
+          <button>READ MORE <i class="fa-solid fa-arrow-right-long"></i></button>
          </div>
         </div>
         <div className="blogs-hero-section">
         <span className='images-2' id='hero-images02'></span>
-        <div className="blog-content">
+        <div className="blog-content heroblog02">
           <a href="#" target="#blank"><h2>Microneedling: The Latest Craze in Skin Care
 </h2></a>
           <p>Proponents say this new skin care method can erase wrinkles and scars, among other things.</p>
+          <button>READ MORE <i class="fa-solid fa-arrow-right-long"></i></button>
          </div>   
         </div>
         <div className="blogs-hero-section">
         <span className='images-3' id='hero-images03'></span>
-        <div className="blog-content">
+        <div className="blog-content heroblog02">
           <a href="#" target="#blank"><h2>What Noncomedogenic Means in Skin Care Products</h2></a>
           <p>Noncomedogenic is a term used to describe certain beauty products that are said to not clog pores. What ingredients to look for is a bit more complex.</p>
+          <button>READ MORE <i class="fa-solid fa-arrow-right-long"></i></button>
          </div>   
         </div>
         <div className="blogs-hero-section">
         <span className='images-4' id='hero-images04'></span>
-        <div className="blog-content">
+        <div className="blog-content heroblog02">
           <a href="#" target="#blank"><h2>Spirulina Benefits for Skin: Superfood or Super Skin Care?</h2></a>
           <p>This blue algae is chock-full of skin-saving nutrients.</p>
+          <button>READ MORE <i class="fa-solid fa-arrow-right-long"></i></button>
          </div>   
         </div>
       </div>

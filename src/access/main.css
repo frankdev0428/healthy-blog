@@ -8,6 +8,7 @@
     margin : 0;
     padding : 0;
   }
+
   .Navbar {
     border : 1px solid black;
     display : flex;
@@ -76,7 +77,6 @@
     display : flex;
     flex-direction: column;
     justify-content: flex-end;
-    z-index : -1;
   }  
   .content-box {
     margin : 1rem;
@@ -86,8 +86,7 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    
+    justify-content: space-evenly; 
   }
 
   .content-box:hover{
@@ -102,6 +101,7 @@
     cursor : pointer;
     color : pink;
   }
+
   .hero-box:nth-of-type(2) {
     background-image: url("./images/skincare-s.webp");
     width : auto;
@@ -359,13 +359,99 @@ text-align: center;
   }
                       /* Daily blogs  */
   .blog02-content-container {
-    /* border : 1px solid black; */
     width: 100%;
     height: auto;
     display : flex;
     flex-direction: column;
-    
+    margin-bottom: 1rem;
   }
+  .blog02-content-container h2:first-of-type{
+    font-size : 40px;
+    margin-top : 1rem;
+    padding-bottom:0;
+  }
+  .blog02-content-container p{
+    margin : 0.5rem;
+  }
+  .heroblog02 {
+     line-height: 2rem;
+     font-size: 15px;
+     font-family: sans-serif;
+  }
+ .author-info {
+  display : flex;
+  padding : 1rem;
+ }
+ .author-info img {
+   width : 30%;
+   height: 30%;
+ }
+ .author-info p{
+   padding :1rem;
+ }
+  /* Hero blogs one */
+  .blog01-content-container {
+    margin-bottom : 1rem
+  }
+  .blog01-content-container h2:first-of-type{
+    font-size : 40px;
+    margin-top : 1rem;
+    padding-bottom:0;
+  }
+  .blog01-content-container h2{
+    font-size : 30px;
+  }
+  .blog01-content-container p{
+    margin : 0.5rem;
+  }
+  .content {
+    border-left: 3px solid red;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding : 2rem;
+    background-color: #efefef;
+    margin: 1rem 0 1rem 0;
+  }
+.decoding-container{
+  padding : 2rem;
+  background-color: #fbf5ed;
+}
+.decoding-container h3{
+  font-size: 30px;
+}
+.decoding-container p{
+  margin: 1rem 0  1rem 0;
+}
+  #hero-images05{
+    background-image: url(../access/images/11-bestskincare.jpeg);
+  }
+  #hero-images06{
+    background-image: url(../access/images/applyingFace.jpeg);
+  }
+  #hero-images07{
+    background-image: url(../access/images/FemaleWashing.jpeg);
+  }
+  #hero-images08{
+    background-image: url(../access/images/womanBathroom.jpeg);
+  }
+  .content-check {
+    border-top : 10px solid bisque;
+    border-bottom : 10px solid bisque;
+    padding : 1rem;
+    margin : 1rem 0 1rem 0;
+  }
+  .content-check button{
+    margin : 1rem;
+  }
+  .content-check h2{
+    margin : 1rem;
+  }
+  .content-check p{
+    margin : 1rem;
+  }
+  /*End Hero blogs one */
+
   #blogs-02-images {
    width : 100%;
    padding : 5rem;
@@ -382,17 +468,63 @@ text-align: center;
   #hero-images04{
     background-image: url(../access/images/blog-images-04.png);
   }
+                  /* Life after Breast cancer blogs  */
+  #daily-blogs01{
+    background-image: url(./images//back-senior.jpeg);
+  }
 
+  #daily-blogs02{
+    background-image: url(./images/breast-cancer.webp);
+  }
+  #daily-blogs03{
+    background-image: url(./images/yoga.jpeg);
+  }
+  #daily-blogs04{
+    background-image: url(./images/pink-lady.jpeg);
+  }
+ #ads-btn {
+  background-color: blue;
+  color : white;
+ }                   
+ .ads-box {
+  display: flex;
+  margin : 2rem 0 2rem 0;
+ }       
+ .ads-box img {
+  width: 40%;
 
-
-
-
-
-
-
-
-
-
+ }   
+ .ads-content h3 ,.ads-content p,.ads-content button {
+   margin : 1rem 1rem 1rem 2rem;
+ }  
+.ads-content h3 {
+  font-size: 2rem;
+  font-family: 'Roboto';
+  padding : 1rem;
+}
+.ads-content button {
+  font-family: 'Roboto';
+}
+hr{
+  margin: 1rem 0 1rem 0;
+}
+.ads-link {
+  text-decoration: none;
+  color : black;
+  font-size: 40px;
+  font-family:  'Roboto';
+  
+}
+ .dailyblog01 {
+  margin : 1rem;
+ }
+  .dailyblog01 p{
+    margin : 1rem 0 1rem 0;
+  }
+ .dailyblog01 h2 {
+  font-size : 2rem;
+ }
+                    /* Life after Breast cancer blogs  */
                    /*End of  Daily blogs  */
     @media only screen and (min-width: 600px){
     .blogs-hero-section {
@@ -429,7 +561,7 @@ text-align: center;
       margin : 1rem;
       border-radius : 50%;
       }
-
+ 
         }   
         @media only screen and (max-width: 530px)  {
           .home,.nutrition,.comment,.blogs,.about{
