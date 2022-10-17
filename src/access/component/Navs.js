@@ -18,7 +18,7 @@ import { Link } from 'react-router-dom';
          </ul>
       </div>
   )
-
+   
 }
 
 export default  Navs;
